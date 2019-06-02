@@ -33,7 +33,6 @@
     "opencollective-postinstall": "^2.0.1"
   },
   "devDependencies": {
-    "expo": "^32.0.0",
     "eslint": "^5.8.0",
     "eslint-config-universe": "^1.0.7",
     "prettier": "^1.15.1",
