@@ -44,6 +44,7 @@ class Input extends React.Component {
       styles,
       iconSize,
       iconContent,
+      inputRef,
       ...props
     } = this.props;
 
@@ -96,7 +97,7 @@ class Input extends React.Component {
         <View style={inputViewStyles}>
           {left && !right && iconInstance}
           <TextInput
-			ref={console.log}
+            ref={inputRef}
             style={inputStyles}
             keyboardType={type}
             secureTextEntry={isPassword}
