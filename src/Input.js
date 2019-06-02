@@ -96,6 +96,7 @@ class Input extends React.Component {
         <View style={inputViewStyles}>
           {left && !right && iconInstance}
           <TextInput
+			ref={console.log}
             style={inputStyles}
             keyboardType={type}
             secureTextEntry={isPassword}
