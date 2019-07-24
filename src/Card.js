@@ -52,7 +52,18 @@ class Card extends Component {
   }
 
   renderAuthor() {
-    const { title, titleColor, caption, captionColor, footerStyle, theme, styles } = this.props;
+    const {
+      title,
+      titleColor,
+      caption,
+      captionColor,
+      footerStyle,
+      theme,
+      styles,
+      hideAuthor,
+    } = this.props;
+
+    if (hideAuthor) return null;
 
     return (
       <Block flex row style={[styles.footer, footerStyle]} space="between">
@@ -105,6 +116,7 @@ Card.propTypes = {
   borderless: PropTypes.bool,
   styles: PropTypes.any,
   theme: PropTypes.any,
+  hideAuthor: PropTypes.bool,
 };
 
 const styles = theme =>
