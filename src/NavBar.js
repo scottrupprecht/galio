@@ -36,10 +36,10 @@ class NavBar extends React.Component {
       <View style={[styles.left, leftStyle]}>
         <TouchableOpacity onPress={() => onLeftPress && onLeftPress()}>
           <Icon
-            family="Galio"
+            family="FontAwesome"
             color={leftIconColor || theme.COLORS.ICON}
             size={theme.SIZES.BASE * 1.0625}
-            name={back ? 'minimal-left' : 'segmentation'}
+            name={back ? 'long-arrow-left' : 'bars'}
           />
         </TouchableOpacity>
       </View>

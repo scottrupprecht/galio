@@ -82,8 +82,8 @@ class Input extends React.Component {
         <Icon
           size={iconSize || theme.SIZES.BASE * 1.0625}
           color={iconColor || theme.COLORS.BLACK}
-          name="eye-17"
-          family="Galio"
+          name="eye"
+          family="FontAwesome"
         />
       </TouchableOpacity>
     );
